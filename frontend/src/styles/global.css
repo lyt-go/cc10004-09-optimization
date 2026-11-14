@@ -35,3 +35,58 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .error-text { color: #b42318; }
 .status-legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 10px; font-size: 12px; color: var(--muted); }
 .legend-item { background: #eef2f7; border-radius: 999px; padding: 2px 10px; }
+
+/* ===== ROI 核算 ===== */
+.roi-page .page-desc { max-width: 860px; line-height: 1.6; }
+.roi-form { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-end; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px; margin-bottom: 12px; }
+.roi-form label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--muted); }
+.roi-form input { border: 1px solid var(--border); border-radius: 6px; padding: 6px 8px; font-size: 13px; min-width: 140px; }
+.roi-toolbar { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; align-items: center; margin-bottom: 10px; }
+.roi-toolbar-group { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.roi-toolbar-label { font-size: 12px; color: var(--muted); }
+.cache-badge { font-size: 12px; border-radius: 999px; padding: 4px 12px; background: #e8f5ec; color: #11643a; }
+.cache-badge.down { background: #fff1e6; color: #9a3412; }
+.stat-hint { display: block; font-size: 11px; color: var(--muted); margin-top: 2px; }
+.notice { border-radius: 8px; padding: 10px 12px; font-size: 13px; margin: 0 0 10px; border: 1px solid var(--border); background: #fff; }
+.notice-main { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.notice-detail { margin: 6px 0 0; padding-left: 20px; color: var(--muted); font-size: 12px; }
+.notice.success { border-color: #b7e4c7; background: #f1fbf4; }
+.notice.conflict { border-color: #f5c2c7; background: #fdf2f3; color: #842029; }
+.notice.error { border-color: #f5c2c7; background: #fdf2f3; color: #b42318; }
+.notice.warning { border-color: #f7d9a8; background: #fffaf0; color: #92400e; }
+.notice.info { border-color: #c7d2fe; background: #f5f7ff; color: #3730a3; }
+.identity-cell { min-width: 220px; }
+.identity-text { display: block; font-family: ui-monospace, Menlo, monospace; font-size: 12px; }
+.identity-tag { display: inline-block; margin-top: 4px; font-size: 11px; background: #eef2f7; border-radius: 999px; padding: 1px 8px; color: var(--muted); }
+.cache-state { font-size: 12px; border-radius: 4px; padding: 2px 6px; background: #eef2f7; }
+.cache-state.hit { background: #e8f5ec; color: #11643a; }
+.cache-state.stale { background: #fff1e6; color: #9a3412; }
+.cache-state.unavailable { background: #fdf2f3; color: #b42318; }
+.cell-warn { display: block; font-size: 11px; color: #b42318; margin-top: 2px; }
+.cell-muted { display: block; font-size: 11px; color: var(--muted); }
+.confirm-cell { min-width: 150px; font-size: 12px; }
+.status-pill { display: inline-block; border-radius: 999px; padding: 2px 10px; font-size: 12px; background: #eef2f7; }
+.status-已计算 { background: #e8f5ec; color: #11643a; }
+.status-已确认 { background: #e0f2fe; color: #075985; }
+.status-已归档 { background: #e5e7eb; color: #374151; }
+.status-计算中断, .status-待重算 { background: #fdf2f3; color: #b42318; }
+.status-计算中 { background: #fff7ed; color: #9a3412; }
+.roi-panels { display: flex; gap: 12px; margin-top: 16px; flex-wrap: wrap; }
+.roi-panel { flex: 1 1 380px; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px; }
+.roi-panel h3 { margin: 0 0 4px; font-size: 14px; }
+.panel-desc { margin: 0 0 8px; font-size: 12px; color: var(--muted); }
+.empty-inline { font-size: 12px; color: var(--muted); margin: 4px 0; }
+.identity-list, .batch-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; font-size: 12px; }
+.identity-list li { border-top: 1px dashed var(--border); padding-top: 8px; }
+.identity-list li:first-child { border-top: none; padding-top: 0; }
+.identity-list code { display: block; font-size: 12px; }
+.batch-list li { border-top: 1px dashed var(--border); padding-top: 8px; }
+.batch-list li:first-child { border-top: none; padding-top: 0; }
+.batch-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.batch-meta { display: flex; flex-wrap: wrap; gap: 8px; color: var(--muted); margin: 2px 0; }
+.batch-status { border-radius: 999px; padding: 1px 8px; background: #eef2f7; }
+.batch-status.succeeded { background: #e8f5ec; color: #11643a; }
+.batch-status.failed, .batch-status.interrupted { background: #fdf2f3; color: #b42318; }
+.batch-status.conflict { background: #fff1e6; color: #9a3412; }
+.batch-status.running { background: #fff7ed; color: #9a3412; }
+.link:disabled, .btn:disabled { opacity: 0.5; cursor: not-allowed; }
